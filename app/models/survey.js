@@ -30,4 +30,7 @@ const surveySchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Survey', surveySchema)
+module.exports = {
+  Survey: mongoose.model('Survey', surveySchema),
+  Response: mongoose.model('Response', responseSchema)
+}
