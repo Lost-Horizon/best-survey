@@ -4,7 +4,8 @@ const express = require('express')
 const passport = require('passport')
 
 // pull in Mongoose model for responses
-const Response = require('../models/survey')
+const imports = require('../models/survey')
+const Response = imports.Response
 
 // we'll use this to intercept any errors that get thrown and send them
 // back to the client with the appropriate status code
